@@ -22,7 +22,7 @@ const Index = () => {
           outerScale={0}
         />
         <Developer />
-        <Experience />x
+        <Experience />
       </Layout>
       <Portfolio />
       <Footer />

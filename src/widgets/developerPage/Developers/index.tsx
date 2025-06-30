@@ -34,7 +34,7 @@ const Developer = () => {
               {t("hello")}
             </motion.h2>
             <h6>
-              My name is Felix Mars, and I have over 8 years of experience in the hospitality industry, working across housekeeping, banquet service, and team coordination. Throughout the years, I’ve seen firsthand how critical it is for businesses to have reliable, trained, and motivated staff—especially in hotels, restaurants, and events.
+              Throughout the years, I’ve seen firsthand how critical it is for businesses to have reliable, trained, and motivated staff—especially in hotels, restaurants, and events.
 
               That’s why I founded Felix Mars Hospitality Staffing Services — to bring together top-quality workers and offer businesses a flexible, professional, and trustworthy staffing solution.
 
