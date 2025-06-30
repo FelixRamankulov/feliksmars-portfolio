@@ -37,8 +37,7 @@ const Expericene = () => {
             initial="hidden"
             animate={inView ? "visible" : "hidden"}
           >
-            {t("experience")}
-          </motion.h3>
+            Why          </motion.h3>
           <motion.h4
             variants={{
               hidden: { opacity: 0, x: -50 },
@@ -52,8 +51,10 @@ const Expericene = () => {
             initial="hidden"
             animate={inView ? "visible" : "hidden"}
           >
-            {t("work")}
+           Work With Us?
           </motion.h4>
+          <br />
+          <br />
         </div>
         <Company />
       </Container>

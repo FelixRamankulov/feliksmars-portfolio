@@ -1,19 +1,8 @@
 import { motion, useTransform, useScroll } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { useInView } from "react-intersection-observer";
-import antd from "../../../../public/images/skills/antd.png";
 import Image from "next/image";
-import react from "../../../../public/images/skills/react.png";
-import redux from "../../../../public/images/skills/redux-icon.webp";
-import nest from "../../../../public/images/skills/nest.png";
-import postgres from "../../../../public/images/skills/postgres.png";
-import git from "../../../../public/images/skills/git.png";
-import next from "../../../../public/images/skills/next.png";
-import framer from "../../../../public/images/skills/framer.png";
-import mui from "../../../../public/images/skills/mui.png";
-
 // portfolio
-import jalgroup from "../../../../public/images/portfolio/jalGroup.png";
 import ButtonLink from "@/shared/ui/buttons/buttonLink";
 import { useTranslations } from "next-intl";
 
@@ -49,69 +38,31 @@ const HorizontalScrollCarousel = () => {
 
   const cards: CardType[] = [
     {
-      url: "/images/portfolio/jalgroupNew.png",
-      title: "Jal Group Asia",
-      technologies: [antd, nest, postgres, redux, react, git],
-      description: t("jalGroup"),
-      link: "https://jalgroupasia.kg/",
+      url: "/images/portfolio/catering.jpg",
+      title: "Catering",
+      description: "We provide professional servers, bussers, and banquet setup staff for events, parties, and corporate functions. Reliable, well-trained, and ready to work when you need them. ",
       id: 1,
     },
     {
-      url: "/images/portfolio/barca.png",
-      title: "Barca experience KG",
-      link: "https://experience.barcelona.kg/",
-      description: t("barca"),
-      technologies: [antd, nest, postgres, redux, react, git],
+      url: "/images/portfolio/banquet.jpg",
+      title: "Banquet setup",
+      description: "Efficient, detail-oriented workers for setting up event spaces ",
       id: 2,
     },
     {
-      url: "/images/portfolio/ergotech.png",
-      title: "Fusion Web",
-      technologies: [next, react, git, framer],
-      link: "https://fusionweb.vercel.app/",
-      description: t("ergo"),
+      url: "/images/portfolio/housekeeping.jpg",
+      title: "Housekeeping",
+      description: "Reliable professionals for maintaining cleanliness in hotels, Airbnb properties, and offices. ",
       id: 3,
     },
     {
-      url: "/images/portfolio/effafa.png",
-      title: "Effafa",
-      technologies: [next, react, git, framer],
-      description: t("effafa"),
-      link: "https://effafa.com/",
+      url: "/images/portfolio/server.jpg",
+      title: "Servers",
+      description: "Professional waitstaff for events and restaurants ",
       id: 4,
     },
-    {
-      url: "/images/portfolio/myPost.png",
-      title: "My Post",
-      link: "https://kyrgyz-post.vercel.app/",
-      technologies: [postgres, react, git, framer, mui, nest],
-      description: t("myPost"),
-      id: 5,
-    },
-    {
-      url: "/images/portfolio/tenloc.png",
-      link: " https://tenloc-pi.vercel.app/",
-      title: "Tenloc",
-      description: t("tenloc"),
-      technologies: [react, git],
-      id: 6,
-    },
-    {
-      url: "/images/portfolio/tunukOi.png",
-      link: "https://ku-tengri-landing.vercel.app/",
-      title: "Tunuk-Oi",
-      description: t("tunuk"),
-      technologies: [react, git],
-      id: 7,
-    },
-    {
-      url: "/images/portfolio/dataxway.jpg",
-      link: "https://dataxway-front.vercel.app/",
-      title: "Dataxway",
-      description: t("dataxway"),
-      technologies: [next, react, git, framer],
-      id: 7,
-    },
+
+
   ];
 
   return (
@@ -147,10 +98,14 @@ const HorizontalScrollCarousel = () => {
               initial="hidden"
               animate={inView ? "visible" : "hidden"}
             >
-              my works
+              my services I provide
             </motion.h4>
 
-            <p className={styles.small}>{t("worksDescription")}</p>
+            <p className={styles.small}>
+
+              My name is Felix Mars, and I have over 8 years of experience in the hospitality industry, working across housekeeping, banquet service, and team coordination. Throughout the years, I’ve seen firsthand how critical it is for businesses to have reliable, trained, and motivated staff—especially in hotels, restaurants, and events.
+
+            </p>
           </div>
           {cards.map((card) => {
             return <Card card={card} key={card.id} />;

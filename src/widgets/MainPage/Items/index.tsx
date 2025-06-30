@@ -5,20 +5,7 @@ import Link from "next/link";
 const Items = () => {
   const variants = {
     hidden: { y: -50, opacity: 0 },
-    visible: { y: 0, opacity: 1, transition: { duration: 0.9, delay: 2 } },
-  };
-
-  const hoverVariants = {
-    hover: {
-      color: "#4e4e4e",
-      transition: { type: "spring", duration: 0.6 },
-    },
-  };
-  const kenzyDeveloperHoverVariants = {
-    hover: {
-      color: "#4e4e4e",
-      transition: { type: "spring", duration: 0.6 },
-    },
+    visible: { y: 0, opacity: 1, transition: { duration: 0.2, delay: 2 } },
   };
 
   return (
@@ -32,28 +19,9 @@ const Items = () => {
           className={styles.item}
         >
           <motion.h5
-            variants={kenzyDeveloperHoverVariants}
             className={styles.title}
           >
-            <Link href="/developer">Kenzy Developer</Link>
-          </motion.h5>
-        </motion.div>
-
-        <motion.div
-          className={styles.item}
-          initial="hidden"
-          animate="visible"
-          variants={{
-            ...variants,
-            visible: {
-              ...variants.visible,
-              transition: { ...variants.visible.transition, delay: 3.3 },
-            },
-          }}
-          whileHover="hover" 
-        >
-          <motion.h5 variants={hoverVariants} className={styles.title}>
-            <Link href="/musician">Kenzy Musician</Link>
+            <Link href="/services">Let's get Started</Link>
           </motion.h5>
         </motion.div>
       </div>

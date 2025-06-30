@@ -5,12 +5,9 @@ import Image from "next/image";
 import me from "./non.png";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
-import useMediaQuery from "@/shared/hooks/useMediaQuery";
 
 const Developer = () => {
   const t = useTranslations();
-  const isMobile = useMediaQuery("md");
-  const imageSize = "auto";
 
   return (
     <div className={styles.wrapper} id="bio">
@@ -36,8 +33,14 @@ const Developer = () => {
             >
               {t("hello")}
             </motion.h2>
-            <h6>{t("description")}</h6>
-          </motion.div>
+            <h6>
+              My name is Felix Mars, and I have over 8 years of experience in the hospitality industry, working across housekeeping, banquet service, and team coordination. Throughout the years, I’ve seen firsthand how critical it is for businesses to have reliable, trained, and motivated staff—especially in hotels, restaurants, and events.
+
+              That’s why I founded Felix Mars Hospitality Staffing Services — to bring together top-quality workers and offer businesses a flexible, professional, and trustworthy staffing solution.
+
+              I personally screen and train every team member to ensure that each client receives the level of service they expect and deserve.
+
+              My mission is simple: not just to provide workers, but to become a true partner in helping your business run smoothly and successfully.</h6>          </motion.div>
 
           <motion.div
             className={styles.imageWrapper}

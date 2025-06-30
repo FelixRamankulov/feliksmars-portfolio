@@ -3,13 +3,10 @@ import styles from "./Greeting.module.scss";
 
 const Greeting = () => {
   const words = [
-    "Hello, world.",
-    "My name is Kenzy.",
-    "I am a Software Developer",
-    "...and also a Musician.",
-    "Choose your Kenzy below",
+    "Felix Mars",
+    "Hospitality Staffing Services"
   ];
-  const combinedWords = words.join("    "); 
+  const combinedWords = words.join("    ");
   const [currentText, setCurrentText] = useState("");
   const [index, setIndex] = useState(0);
 
@@ -18,7 +15,7 @@ const Greeting = () => {
       const timeoutId = setTimeout(() => {
         setCurrentText((text) => text + combinedWords.charAt(index));
         setIndex((index) => index + 1);
-      }, 40); 
+      }, 40);
 
       return () => clearTimeout(timeoutId);
     }

@@ -24,7 +24,7 @@ const Header = () => {
     <Container>
       <div className={styles.header}>
         <div className={styles.logo}>
-          <Image src={logo} alt="Logo" className={styles.logoImage} />
+          Felix Mars
         </div>
         {isMobile ? (
           <>
@@ -48,15 +48,14 @@ const Header = () => {
                     <Link to="contact" smooth={true} duration={500} onClick={toggleMenu}><p>{t("contact")}</p></Link>
                   </nav>
                   <div className={styles.icons}>
-                    <a href="https://github.com/kenzy51" target="_blank" className={styles.link}><Image alt="Github" src={github} width={30} /></a>
-                    <a href="https://www.linkedin.com/in/kanat-nazar-a8b55533a/" target="_blank" className={styles.link}><Image alt="LinkedIn" src={linkedin} width={30} /></a>
+                    {/* <a href="https://www.linkedin.com/in/feliksramankul/" target="_blank" className={styles.link}><Image alt="LinkedIn" src={linkedin} width={30} /></a> */}
                   </div>
                 </motion.div>
               )}
             </AnimatePresence>
           </>
         ) : (
-           <div className={styles.info}>
+          <div className={styles.info}>
             <nav className={styles.navLinks}>
               <Link to="bio" smooth={true} duration={500}><p>{t("bio")}</p></Link>
               <Link to="skills" smooth={true} duration={500}><p>{t("skills")}</p></Link>
@@ -65,8 +64,8 @@ const Header = () => {
               <Link to="contact" smooth={true} duration={500}><p>{t("contact")}</p></Link>
             </nav>
             <div className={styles.icons}>
-              <a href="https://github.com/kenzy51" target="_blank" className={styles.link}><Image alt="Github" src={github} width={30} /></a>
-              <a href="https://www.linkedin.com/in/kanat-nazarov-438baa247/" target="_blank" className={styles.link}><Image alt="LinkedIn" src={linkedin} width={30} /></a>
+              {/* <a href="https://www.linkedin.com/in/feliksramankul/" target="_blank" className={styles.link}><Image alt="LinkedIn" src={linkedin} width={30} /></a> */}
+
             </div>
           </div>
         )}

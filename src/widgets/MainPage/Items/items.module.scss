@@ -4,6 +4,7 @@
   margin: 0 auto;
   align-items: center;
   justify-content: center;
+  color: black;
 }
 .item {
   font-weight: 400;
@@ -11,35 +12,11 @@
   font-size: 24px;
 }
 
-// .item::after {
-//   content: "";
-//   position: absolute;
-//   bottom: -10px;
-//   left: 50%;
-//   width: 0;
-//   height: 2px;
-//   background: white;
-//   transition: width 0.5s, left 0.5s;
-// }
-
-// .item::after {
-//   content: "";
-//   position: absolute;
-//   bottom: 500px;
-//   right: 50%;
-//   width: 0;
-//   height: 2px;
-//   background: white;
-//   transition: width 0.5s, left 0.5s;
-// }
-
-// .item:hover::after {
-//   width: 100%;
-//   left: 0;
-// }
-
 .title{
-  font-weight: 400;
+  // margin-top: 200px;
+  font-size: 70px;
+  font-weight: 800;
+  color: black !important;
 }
 
 .inner {

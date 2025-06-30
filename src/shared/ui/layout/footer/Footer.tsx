@@ -9,25 +9,25 @@ import { link } from "fs";
 import { Link } from "react-scroll";
 import { useRouter } from "next/router";
 import Image from "next/image";
-const smallBlocksData = [
-  {
-    header: "Works",
-    description:
-      "Here's a curated selection showcasing my expertise and the achieved results.",
-    link: "portfolio",
-  },
-  {
-    header: "Skills",
-    description:
-      "Check out the things I'm good at, from building websites to design and more.",
-    link: "skills",
-  },
-  {
-    header: "Experience",
-    description: "Look at my experience to know my qualification better.",
-    link: "experience",
-  },
-];
+// const smallBlocksData = [
+//   // {
+//   //   header: "Works",
+//   //   description:
+//   //     "Here's a curated selection showcasing my expertise and the achieved results.",
+//   //   link: "portfolio",
+//   // },
+//   // // {
+//   // //   header: "Skills",
+//   // //   description:
+//   // //     "Check out the things I'm good at, from building websites to design and more.",
+//   // //   link: "skills",
+//   // // },
+//   // {
+//   //   header: "Experience",
+//   //   description: "Look at my experience to know my qualification better.",
+//   //   link: "experience",
+//   // },
+// ];
 
 const resume =
   "https://drive.google.com/file/d/1JlD0TpBVghUE261ZFkMtZqTheEjDaQch/view?usp=sharing";
@@ -81,33 +81,20 @@ const Footer = () => {
                 Connect.{" "}
               </motion.h4>
             </div>
-            <a href="mailto:nazarovkanat7@gmail.com" className={styles.email}>
-              nazarovkanat7@gmail.com
+            <a href="mailto:felixmarstaffing@gmail.com" className={styles.email}>
+              felixmarstaffing@gmail.com
+            </a>
+            <a href="tel:+12244603238" className={styles.email}>
+              (224) 460-3238
             </a>
 
-            <div className={styles.icons}>
-              <a
-                href="https://github.com/kenzy51"
-                target="_blank"
-                className={styles.link}
-              >
-                <Image alt="" src={git} width={30} />
-              </a>{" "}
-              <a
-                href="https://www.linkedin.com/in/kanat-nazarov-438baa247/"
-                target="_blank"
-                className={styles.link}
-              >
-                <Image alt="" src={linkedin} width={30} />
-              </a>
-            </div>
             <div className={styles.bottom}>
               <p>Designed and Developed by Kenzy Fullstack</p>
               <p>Powered by NextJs 14</p>
             </div>
           </div>
           <div className={styles.smallBlocks}>
-            {smallBlocksData.map((block, index) => (
+            {/* {smallBlocksData.map((block, index) => (
               <motion.div
                 key={index}
                 className={styles.small}
@@ -128,26 +115,7 @@ const Footer = () => {
                 </Link>
                 <p>{block.description}</p>
               </motion.div>
-            ))}
-            <motion.div
-              className={styles.small}
-              variants={{
-                hidden: { opacity: 0, y: -50 },
-                visible: {
-                  opacity: 1,
-                  x: 0,
-                  y: 0,
-                  transition: { duration: 0.5, delay: 1.4 },
-                },
-              }}
-              initial="hidden"
-              animate={inView ? "visible" : "hidden"}
-            >
-              <a href={resume} target="_blank">
-                <h5 className={styles.header}>{"Resume"}</h5>
-              </a>
-              <p>You can check my CV to learn me better.</p>
-            </motion.div>
+            ))} */}
           </div>
         </div>
       </Container>

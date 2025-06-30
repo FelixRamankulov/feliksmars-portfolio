@@ -4,37 +4,32 @@ import { useInView } from "react-intersection-observer";
 
 import styles from "./company.module.scss";
 
+const thirdDesc = "With Heart of the House, you’ll always have the right number of skilled staff—no more overstaffing during slow periods or scrambling during peak times. We offer flexible staffing options, including temporary, temp-to-hire, direct placement, and fully managed solutions."
+const desc4 = "Unexpected surges in occupancy? No problem. Our nationwide network of hospitality professionals allows us to quickly provide experienced staff, even on short notice, so your operations never miss a beat."
 const companiesData = [
   {
-    title: "Full Stack Engineer",
-    company: "Jal Group Asia",
-    duration: "October 2023 - present ",
+    title: "FLEXIBLE WORKFORCE ",
+    company: "We manage payroll taxes, benefits, and workers’ compensation for you, reducing your overall labor costs. You’ll also cut expenses tied to hiring, onboarding, and employee turnover."
   },
   {
-    title: "Software Engineer",
-    company: "Sigma Software Solutions",
-    duration: "September 2023 - present ",
+    title: "SAVE TIME",
+    company: "We handle all housekeeping responsibilities, freeing you up to concentrate on guest satisfaction, marketing, and other priorities that drive your hotel’s success. ",
+
   },
   {
-    title: "Full Stack Developer",
-    company: "DataXWay",
-    duration: "Febrary 2023 - August 2023",
+    title: "RIGHT-SIZED STAFFING",
+    company: thirdDesc
   },
   {
-    title: "Full Stack Developer",
-    company: "Discovery Studio",
-    duration: "January 2022 - Febrary 2023",
+    title: "FLEXIBLE HOTEL STAFFING",
+    company: desc4
   },
-  {
-    title: "Frontend Developer",
-    company: "Discovery Studio",
-    duration: "August 2020 - Febrary 2023",
-  },
+
 ];
 interface CompanyProps {
   title: string;
   company: string;
-  duration: string;
+  duration?: string;
   index: number;
 }
 
@@ -96,7 +91,6 @@ const Company: React.FC = () => {
             <SingleCompany
               title={company.title}
               company={company.company}
-              duration={company.duration}
               index={index}
             />
           ) : (
@@ -121,7 +115,6 @@ const Company: React.FC = () => {
                   <h2>{company.title}</h2>
                   <p>{company.company}</p>
                 </div>
-                <div className={styles.rightBlock}>{company.duration}</div>
               </div>
               <div className={styles.border}></div>
             </motion.div>
