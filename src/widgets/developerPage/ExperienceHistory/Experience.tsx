@@ -24,7 +24,7 @@ const Expericene = () => {
     <div className={styles.wrapper} id="experience">
       <Container>
         <div className={styles.skill} ref={ref}>
-          <motion.h3
+          {/* <motion.h3
             variants={{
               hidden: { opacity: 0, x: -50 },
               visible: {
@@ -52,7 +52,10 @@ const Expericene = () => {
             animate={inView ? "visible" : "hidden"}
           >
            Work With Us?
-          </motion.h4>
+          </motion.h4> */}
+          <h4>
+            Why Work With Us?
+          </h4>
           <br />
           <br />
         </div>
