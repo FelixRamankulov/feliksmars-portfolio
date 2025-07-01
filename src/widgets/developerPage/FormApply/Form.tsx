@@ -52,6 +52,15 @@ const FormApply = () => {
             onSubmit={handleSubmit}
             className="max-w-2xl mx-auto space-y-4 bg-white/5 backdrop-blur-md p-6 rounded-xl text-white shadow-xl"
         >
+            <div className="max-w-2xl mx-auto mb-6">
+                <button
+                    type="button"
+                    onClick={() => window.location.href = '/handyman'}
+                    className="w-full py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-md font-semibold transition"
+                >
+                    If you need handyman services click here
+                </button>
+            </div>
             <h2 className="text-xl font-bold">Job Information</h2>
 
             <input
@@ -74,9 +83,9 @@ const FormApply = () => {
                 <option value="Temporary">Temporary</option>
                 <option value="Full-time">Full-time</option>
             </select>
-                 <p>
-                    Start Date:
-                 </p>
+            <p>
+                Start Date:
+            </p>
             <input
                 name="startDate"
                 type="date"

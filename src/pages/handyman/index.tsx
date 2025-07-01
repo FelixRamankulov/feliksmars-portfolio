@@ -75,7 +75,7 @@ const Handyman = () => {
       <h2 className="text-3xl font-bold mb-6 text-center">🔧 Handyman Services</h2>
 
       <p className="text-lg text-center mb-10 text-gray-300">
-        I provide professional handyman services including repairs, installations, painting, furniture assembly, and more.
+        We provide professional handyman services including repairs, installations, painting, furniture assembly, and more.
       </p>
 
       <div className="mb-16">

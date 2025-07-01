@@ -25,7 +25,7 @@ const Header = () => {
 
         <NextLink href="/handyman" passHref>
           <p className={styles.handymanLink} onClick={toggleMenu} style={{ cursor: "pointer" }}>
-            Handyman
+            Handyman Services
           </p>
         </NextLink>
 
@@ -47,7 +47,7 @@ const Header = () => {
                     {/* Mobile menu handyman link */}
                     <NextLink href="/handyman" passHref>
                       <p className={styles.handymanLink} onClick={toggleMenu} style={{ cursor: "pointer" }}>
-                        Handyman
+                        Handyman Services
                       </p>
                     </NextLink>
                   </nav>
@@ -58,24 +58,7 @@ const Header = () => {
           </>
         ) : (
           <div className={styles.info}>
-            <nav className={styles.navLinks}>
-              {/* Other internal scroll links */}
-              <ScrollLink to="bio" smooth={true} duration={500}>
-                <p>{t("bio")}</p>
-              </ScrollLink>
-              <ScrollLink to="skills" smooth={true} duration={500}>
-                <p>{t("skills")}</p>
-              </ScrollLink>
-              <ScrollLink to="experience" smooth={true} duration={500}>
-                <p>{t("experience")}</p>
-              </ScrollLink>
-              <ScrollLink to="portfolio" smooth={true} duration={500}>
-                <p>{t("portfolio")}</p>
-              </ScrollLink>
-              <ScrollLink to="contact" smooth={true} duration={500}>
-                <p>{t("contact")}</p>
-              </ScrollLink>
-            </nav>
+
             <div className={styles.icons}></div>
           </div>
         )}
