@@ -8,6 +8,7 @@ import Cursor from "@/shared/ui/cursor/Cursor";
 import AnimatedCursor from "react-animated-cursor";
 import Footer from "@/shared/ui/layout/footer/Footer";
 import { useRouter } from "next/router";
+import FormApply from "@/widgets/developerPage/FormApply/Form";
 
 const Index = () => {
  
@@ -25,6 +26,7 @@ const Index = () => {
         <Experience />
       </Layout>
       <Portfolio />
+      <FormApply/>
       <Footer />
     </>
   );
