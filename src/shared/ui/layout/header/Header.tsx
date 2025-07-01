@@ -23,11 +23,7 @@ const Header = () => {
       <div className={styles.header}>
         <div className={styles.logo}>Felix Mars</div>
 
-        <NextLink href="/handyman" passHref>
-          <p className={styles.handymanLink} onClick={toggleMenu} style={{ cursor: "pointer" }}>
-            Handyman Services
-          </p>
-        </NextLink>
+    
 
         {isMobile ? (
           <>
@@ -43,15 +39,8 @@ const Header = () => {
                   transition={{ type: "spring", stiffness: 300, damping: 30 }}
                   className={styles.mobileMenu}
                 >
-                  <nav className={styles.navLinks}>
-                    {/* Mobile menu handyman link */}
-                    <NextLink href="/handyman" passHref>
-                      <p className={styles.handymanLink} onClick={toggleMenu} style={{ cursor: "pointer" }}>
-                        Handyman Services
-                      </p>
-                    </NextLink>
-                  </nav>
-                  <div className={styles.icons}></div>
+                  
+       
                 </motion.div>
               )}
             </AnimatePresence>

@@ -42,7 +42,5 @@
   display: flex;
   flex-direction: column;
   row-gap: 40px;
-  @media (max-width: 480px) {
-    row-gap: 10px;
-  }
+ 
 }
