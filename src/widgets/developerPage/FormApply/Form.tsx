@@ -11,7 +11,6 @@ const initialFormState = {
     firstName: '',
     lastName: '',
     hotel: '',
-    managementCompany: '',
     phone: '',
     email: '',
     respondBy: '',
@@ -142,14 +141,6 @@ const FormApply = () => {
                 className="w-full p-3 bg-white/5 border border-white/20 rounded-md placeholder-gray-300 text-white transition focus:outline-none focus:ring-2 focus:ring-white/30 hover:border-white/40"
             />
 
-            <input
-                name="managementCompany"
-                value={formData.managementCompany}
-                placeholder="Management Company (or indicate if self-managed)*"
-                onChange={handleChange}
-                required
-                className="w-full p-3 bg-white/5 border border-white/20 rounded-md placeholder-gray-300 text-white transition focus:outline-none focus:ring-2 focus:ring-white/30 hover:border-white/40"
-            />
 
             <input
                 name="phone"

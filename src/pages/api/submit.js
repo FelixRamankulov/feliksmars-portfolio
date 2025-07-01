@@ -1,9 +1,9 @@
 import { MongoClient } from 'mongodb';
 
-const TELEGRAM_BOT_TOKEN = "7268532037:AAHsHkUrMXBYupk7orB9LuAVE61lfW0H4w8";
-const ADMIN_IDS = ["340294357", "7605424201"];
-const MONGODB_URI = 'mongodb+srv://marsfelix00:felix2025@hospitality-felix.fa0ojy3.mongodb.net/?retryWrites=true&w=majority&appName=hospitality-felix';
-const DB_NAME = 'Felix-db';
+const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
+const ADMIN_IDS = process.env.TELEGRAM_ADMIN_IDS?.split(',') || [];
+const MONGODB_URI = process.env.MONGODB_URI;
+const DB_NAME = process.env.MONGODB_DB_NAME;
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
@@ -32,7 +32,6 @@ export default async function handler(req, res) {
 👤 Contact:
 • ${data.firstName} ${data.lastName}
 🏨 Company: ${data.hotel}
-🏢 Management: ${data.managementCompany}
 📞 Phone: ${data.phone}
 📧 Email: ${data.email}
 ✅ Preferred Contact: ${data.respondBy}
